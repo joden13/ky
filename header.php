@@ -8,7 +8,7 @@
 	
 	//打开session
 	session_start();
-	$host = $_SERVER['SERVER_NAME'].'/ky';
+	$host = $_SERVER['SERVER_NAME'].'/kysys';
 	define("XITONG","网安支队电子物证勘验登记系统");
 ?>
 <html>
