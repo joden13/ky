@@ -12,14 +12,17 @@ require_once 'header.php';				//包含头文件
 <legend>用户注册-所有项目必填</legend>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
 <?php
+echo "所属地区:";
 echo slt($distlist,'dist');		//生存select下拉列表，函数slt()见selectlist.php
+echo "所属警种:";
 echo slt($deplist,'dep');
 ?>
 <p>单位名称:<input type="text" name="dep2" />某大队或某派出所，例：<b>刑警大队</b>或<b>小南海派出所</b>，不需要带六安市某某区/某某县公安局。</p>
 <p>用户名: <input type="text" name="username" />允许字母数字，必须字母开头，4-16个字符。</p>
 <p>输入密码: <input type="password" name="password" />大于6个字符。</p>
-<p>确认密码: <input type="password" name="repassword" />大于6个字符。</p>
+<p>确认密码: <input type="password" name="repassword" />再一次输入密码。</p>
 <input type="submit" value="提交" />
+<a href="login.php">返回登录界面</a>
 </form>
 </fieldset>
 <?php 
