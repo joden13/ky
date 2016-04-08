@@ -1,0 +1,127 @@
+body {
+	font-size: 14px;
+	font-family: verdana,arial,sans-serif;
+}
+
+table {
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+	margin:5px;
+}
+table th {
+	border-width: 1px;
+	padding: 2px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table td {
+	border-width: 1px;
+	padding: 2px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+#maintable td {
+
+}
+
+
+#details{
+	width: 600px;
+}
+
+#showp {
+	float:left;
+	width:32%;
+	table-layout: fixed;
+	word-wrap:break-word;
+}
+
+
+
+#shows {
+	float:left;
+	width:32%;
+	table-layout: fixed;
+	word-wrap:break-word;
+}
+
+
+
+
+p {
+	clear:both;
+	margin:20px 10px;
+}
+
+
+ a{      
+     text-align:center;
+     margin:5px;
+	 text-decoration:none;
+	 font-weight:bold;
+}
+
+
+
+fieldset {
+	clear:both;
+}
+
+select {
+	background-color: #dedede;
+	width: 200px;
+	padding: 5px;
+	
+	border: 1px solid #ccc;
+	height: 30px;
+	margin:5px;
+}
+
+
+
+textarea {
+
+	border: 1px solid #dedede;
+	height: 200px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 3px 3px 3px 5px;
+	width: 600px;
+}
+
+span {
+	margin-left: 2px;
+}
+
+div{
+	clear:both;
+	text-align:center;
+}
+
+#logo {
+	font-size: 30px;
+}
+
+
+#print {
+	width:600px;
+	word-break:break-all;
+	word-wrap:break-all;
+}
+
+#print th.pth{
+	width:80px;
+}
+
+#print th.textarea {
+	height: 200px;
+}
+
+#print caption {
+	font-size: 26px;
+}
