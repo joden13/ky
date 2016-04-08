@@ -93,7 +93,7 @@
   <option value ="台式电脑">台式电脑</option>
   <option value="笔记本电脑">笔记本电脑</option>
   <option value="平板电脑">平板电脑</option>
-  <option value="U盘或其他移动存储">U盘或其他移动存储</option>
+  <option value="优盘或其他移动存储">优盘或其他移动存储</option>
   <option value="其他">其他</option>
 </select></p>
 <p>涉案物品持有人：
