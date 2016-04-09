@@ -17,10 +17,10 @@ echo slt($distlist,'dist');		//生存select下拉列表，函数slt()见selectli
 echo "所属警种:";
 echo slt($deplist,'dep');
 ?>
-<p>单位名称:<input type="text" name="dep2" />某大队或某派出所，例：<b>刑警大队</b>或<b>小南海派出所</b>，不需要带六安市某某区/某某县公安局。</p>
-<p>用户名: <input type="text" name="username" />允许字母数字，必须字母开头，4-16个字符。</p>
-<p>输入密码: <input type="password" name="password" />大于6个字符。</p>
-<p>确认密码: <input type="password" name="repassword" />再一次输入密码。</p>
+<p>单位名称:<input type="text" name="dep2" /><span>某大队或某派出所，例：<b>刑警大队</b>或<b>小南海派出所</b>，不需要带六安市某某区/某某县公安局。</span></p>
+<p>用户名: <input type="text" name="username" /><span>允许字母数字，必须字母开头，4-16个字符。</span></p>
+<p>输入密码: <input type="password" name="password" /><span>大于6个字符。</span></p>
+<p>确认密码: <input type="password" name="repassword" /><span>再一次输入密码。</span></p>
 <input type="submit" value="提交" />
 <a href="login.php">返回登录界面</a>
 </form>
@@ -28,7 +28,21 @@ echo slt($deplist,'dep');
 <?php 
 	require_once 'footer.php';
 ?>
+<script>
+	$(document).ready(function(){
 
+		$("span").hide();
+		$("input").focus(function(){
+
+			$(this).nextAll().show();
+		});
+		$("input").blur(function(){
+
+			$("span").hide();
+		});
+	});
+
+</script>
 
 <?php
 if(!empty($_POST)){				//检测是否提交过数据，如第一次访问并未提交数据不运行一下程序
