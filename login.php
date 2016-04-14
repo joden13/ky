@@ -5,7 +5,6 @@
 
 
 	require_once 'header.php';				//包含头文件
-
 ?>
 		<div id='logo'>六安市公安局网安支队电子物证委托勘验登记系统</div>
 		<fieldset>
@@ -13,7 +12,7 @@
 		<form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
 			<p>用户名: <input type="text" name="username" /></p>
 			<p>密&nbsp&nbsp&nbsp码: <input type="password" name="password" /></p>
-			<p><input type="submit" value="登录" /><a href="/ky/reg.php">注册</a></p>
+			<p><input type="submit" value="登录" /><a href="reg.php">注册</a></p>
 		</form>
 		<p><b>请使用IE6.0以上浏览器，或使用<a href='download/chrome_installer.exe'>chrome</a>或firefox浏览器登录本系统，否则本系统的各项功能可能无法正常使用。</b><br>忘记密码请致电0564-3378036，由支队重置密码。</p>
 		</fieldset>

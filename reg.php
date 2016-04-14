@@ -15,7 +15,7 @@ require_once 'header.php';				//包含头文件
 echo slt($distlist,'dist');		//生存select下拉列表，函数slt()见selectlist.php
 echo slt($deplist,'dep');
 ?>
-<p>单位名称:<input type="text" name="dep2" />某大队或某派出所，请填写中文全称。</p>
+<p>单位名称:<input type="text" name="dep2" />某大队或某派出所，例：<b>刑警大队</b>或<b>小南海派出所</b>，不需要带六安市某某区/某某县公安局。</p>
 <p>用户名: <input type="text" name="username" />允许字母数字，必须字母开头，4-16个字符。</p>
 <p>输入密码: <input type="password" name="password" />大于6个字符。</p>
 <p>确认密码: <input type="password" name="repassword" />大于6个字符。</p>
